@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 nyelv alapjai</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #007BFF;
+        }
+        .content {
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            width: 300px;
+            height: auto;
+            margin-top: 20px;
+            display: block; /* Blokkos elrendezés, hogy egymás alatt legyenek */
+            margin-left: auto; /* Középre igazítás */
+            margin-right: auto; /* Középre igazítás */
+        }
+        ul {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+            list-style-type: square;
+        }
+        li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        .html5-logo {
+            width: 150px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML 5 nyelv alapjai</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Kezdőlap</a>
+        <a href="adatbazisrendszerek.html">Adatbázisrendszerek</a>
+        <a href="prezentacio.html">Prezentáció készítése</a>
+    </nav>
+
+    <div class="content">
+        <h2>HTML 5 Kurzus Tematika</h2>
+        <ul>
+            <li>HTML5 alapfogalmak</li>
+            <li>HTML5 szabályok</li>
+            <li>Gyakorlás Zárthelyi dolgozatra</li>
+            <li>HTML5 grafikus lehetőségek: <code>&lt;canvas&gt;</code></li>
+            <li>Multimédiás elemek: <code>&lt;audio&gt;</code> és <code>&lt;video&gt;</code></li>
+            <li>HTML5 gyakorlás Vizsgára</li>
+        </ul>
+
+        <!-- Kép, ami visszavisz a kezdőlapra -->
+        <a href="index.html">
+            <img src="iit.jpg" alt="Vissza a kezdőlapra">
+        </a>
+
+        <!-- HTML5 logo közvetlenül az iit.jpg kép alatt -->
+        <img src="html5.png" alt="HTML5 logo" class="html5-logo">
+    </div>
+
+    <footer>
+        <p>Gerőcs Gergő, FEU2E5, 2024</p>
+    </footer>
+
+</body>
+</html>
