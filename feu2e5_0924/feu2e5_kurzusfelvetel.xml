@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE feu2e5_kurzusfelvetel SYSTEM "feu2e5_kurzusfelvetel.dtd">
+
+<feu2e5_kurzusfelvetel tanev="2024/25/1" egyetem="Miskolci Egyetem">
+    <hallgato>
+        <hnev>Gerőcs Gergő<hnev/>
+        <szulev>2002<szulev/>
+        <szak evf="5">Mérnökinformatikus</szak>
+    </hallgato>
+    <kurzusok>
+        <kurzus id="GEIAL331-B" jovahagyas="igen" nyelv="magyar">
+            <kurzusnev>Webtech1</kurzusnev>
+            <kredit>5</kredit>
+            <hely>EA1</hely>
+            <idopont>Hétfő 10-12</idopont>
+            <oktato>Agárdi Anita</oktato>
+        </kurzus>
+        <kurzus id="GEIAL32B-B" jovahagyas="nem" nyelv="magyar">
+            <kurzusnev>Oracle</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Info/103</hely>
+            <idopont>Hétfő 8-10</idopont>
+            <oktato>Kovács László</oktato>
+            <oraado>Szűcs Miklós</oraado>
+        </kurzus>
+        <kurzus id="GEIAL31G-B" jovahagyas="nem">
+            <kurzusnev>Korszerű Tech.</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Info/103</hely>
+            <idopont>Hétfő 12-14</idopont>
+            <oktato>Árvai László</oktato>
+            <oraado>Soós Róbert</oraado>
+        </kurzus>
+        <kurzus id="GEIAL336-B" jovahagyas="igen">
+            <kurzusnev>Webalk C#</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Info/101</hely>
+            <idopont>Kedd 14-18</idopont>
+            <oktato>Árvai László</oktato>
+        </kurzus>
+        <kurzus id="GEFIT012-B" jovahagyas="igen">
+            <kurzusnev>Fizika 2</kurzusnev>
+            <kredit>4</kredit>
+            <hely>A/1 303</hely>
+            <idopont>Kedd 8-10</idopont>
+            <oktato>Nagy Ádám</oktato>
+        </kurzus>       
+    </kurzusok>
+</feu2e5_kurzusfelvetel>
