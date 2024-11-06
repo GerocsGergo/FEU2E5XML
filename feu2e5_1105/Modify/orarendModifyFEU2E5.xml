@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<GG_orarend xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="feu2e5_orarend.xsd">
+        
+    <ora id="01" tipus="eloadas">
+                
+        <targy>Oracle</targy>
+                
+        <idopont>
+                        
+            <nap>Hétfő</nap>
+                        
+            <tol>8</tol>
+                        
+            <ig>10</ig>
+                    
+        </idopont>
+           
+        
+        <helyszin>Info/103</helyszin>
+                
+        <oktato>Kovács László</oktato>
+                
+        <szak>Mérnök informatika</szak>
+            
+        <óraadó>Nagy Károly</óraadó>
+    </ora>
+        
+    <ora id="02" tipus="eloadas">
+                
+        <targy>Oracle</targy>
+                
+        <idopont>
+                        
+            <nap>Kedd</nap>
+                        
+            <tol>14</tol>
+                        
+            <ig>15</ig>
+                    
+        </idopont>
+           
+        
+        <helyszin>Info/202</helyszin>
+                
+        <oktato>Szűcs Miklós</oktato>
+                
+        <szak>Mérnök informatika</szak>
+            
+    </ora>
+        
+    <ora id="03" tipus="eloadas">
+                
+        <targy>Webtech1</targy>
+                
+        <idopont>
+                        
+            <nap>Hétfő</nap>
+                        
+            <tol>10</tol>
+                        
+            <ig>12</ig>
+                    
+        </idopont>
+           
+        
+        <helyszin>Eloado 1</helyszin>
+                
+        <oktato>Agárdi Anita</oktato>
+                
+        <szak>Mérnök informatika</szak>
+            
+    </ora>
+        
+    <ora id="04" tipus="eloadas">
+                
+        <targy>Webtech1</targy>
+                
+        <idopont>
+                        
+            <nap>Hétfő</nap>
+                        
+            <tol>14</tol>
+                        
+            <ig>16</ig>
+                    
+        </idopont>
+           
+        
+        <helyszin>Info/101</helyszin>
+                
+        <oktato>Agárdi Anita</oktato>
+                
+        <szak>Mérnök informatika</szak>
+            
+    </ora>
+        
+    <ora id="05" tipus="eloadas">
+                
+        <targy>Korszerű tech</targy>
+                
+        <idopont>
+                        
+            <nap>Hétfő</nap>
+                        
+            <tol>12</tol>
+                        
+            <ig>14</ig>
+                    
+        </idopont>
+           
+        
+        <helyszin>Info/103</helyszin>
+                
+        <oktato>Árvai László</oktato>
+                
+        <szak>Mérnök informatika</szak>
+            
+    </ora>
+        
+    <ora id="06" tipus="eloadas">
+                
+        <targy>Korszerű tech</targy>
+                
+        <idopont>
+                        
+            <nap>Szerda</nap>
+                        
+            <tol>16</tol>
+                        
+            <ig>18</ig>
+                    
+        </idopont>
+           
+        
+        <helyszin>Info/15</helyszin>
+                
+        <oktato>Soós Róbert</oktato>
+                
+        <szak>Mérnök informatika</szak>
+            
+    </ora>
+        
+    <ora id="07" tipus="eloadas">
+                
+        <targy>WebalkC#</targy>
+                
+        <idopont>
+                        
+            <nap>Kedd</nap>
+                        
+            <tol>14</tol>
+                        
+            <ig>16</ig>
+                    
+        </idopont>
+               
+        
+        <helyszin>Info/101</helyszin>
+                
+        <oktato>Árvai László</oktato>
+                
+        <szak>Mérnök informatika</szak>
+            
+    </ora>
+        
+    <ora id="08" tipus="eloadas">
+                
+        <targy>WebalkC#</targy>
+                
+        <idopont>
+                        
+            <nap>Szerda</nap>
+                        
+            <tol>16</tol>
+                        
+            <ig>18</ig>
+                    
+        </idopont>
+            
+        
+        <helyszin>Info/101</helyszin>
+                
+        <oktato>Árvai László</oktato>
+                
+        <szak>Mérnök informatika</szak>
+            
+    </ora>
+    
+</GG_orarend>

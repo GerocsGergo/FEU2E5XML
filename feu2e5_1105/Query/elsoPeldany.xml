@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ora id="01" tipus="eloadas">
+   <targy>Oracle</targy>
+   <idopont>
+      <nap>Hétfõ</nap>
+      <tol>8</tol>
+      <ig>10</ig>
+   </idopont>
+   <helyszin>Info/103</helyszin>
+   <oktato>Kovács László</oktato>
+   <szak>Mérnök informatika</szak>
+</ora>
