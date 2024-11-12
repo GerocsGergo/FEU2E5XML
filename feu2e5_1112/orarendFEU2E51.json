@@ -1,0 +1,94 @@
+{
+  "FEU2E5_orarend":{
+    "ora":[
+      {
+        "targy":"Oracle",
+        "oktato":"Kovács László",
+        "szak":"Mérnök informatika",
+        "idopont":{
+          "tol":"8",
+          "nap":"hétfõ",
+          "ig":"10"
+        },
+        "helyszin":"Inf. 103"
+      },
+      {
+        "targy":"Oracle",
+        "oktato":"Szûcs Miklós",
+        "szak":"Mérnök informatika",
+        "idopont":{
+          "tol":"14",
+          "nap":"kedd",
+          "ig":"15"
+        },
+        "helyszin":"Inf. 202"
+      },
+      {
+        "targy":"Webtech1",
+        "oktato":"Agárdi Anita",
+        "szak":"Mérnök informatika",
+        "idopont":{
+          "tol":"10",
+          "nap":"hétfõ",
+          "ig":"12"
+        },
+        "helyszin":"Elõadó 1."
+      },
+      {
+        "targy":"Webtech1",
+        "oktato":"Agárdi Anita",
+        "szak":"Mérnök informatika",
+        "idopont":{
+          "tol":"14",
+          "nap":"hétfõ",
+          "ig":"16"
+        },
+        "helyszin":"Inf. 101"
+      },
+      {
+        "targy":"Korszerû tech",
+        "oktato":"Árvai László",
+        "szak":"Mérnök informatika",
+        "idopont":{
+          "tol":"12",
+          "nap":"hétfõ",
+          "ig":"14"
+        },
+        "helyszin":"Inf. 103"
+      },
+      {
+        "targy":"Korszerû tech",
+        "oktato":"Árvai László",
+        "szak":"Mérnök informatika",
+        "idopont":{
+          "tol":"16",
+          "nap":"szerda",
+          "ig":"18"
+        },
+        "helyszin":"Inf. 103"
+      },
+      {
+        "targy":"Webalkc#",
+        "oktato":"Árvai László",
+        "szak":"Mérnök informatika",
+        "idopont":{
+          "tol":"14",
+          "nap":"kedd",
+          "ig":"16"
+        },
+        "helyszin":"Inf. 101"
+      },
+      {
+        "targy":"Webalkc#",
+        "oktato":"Árvai László",
+        "szak":"Mérnök informatika",
+        "idopont":{
+          "tol":"16",
+          "nap":"kedd",
+          "ig":"18"
+        },
+        "helyszin":"Inf. 101"
+      }
+    ]
+  }
+}
