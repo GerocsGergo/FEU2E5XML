@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>JSON parser</title>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <h3>Órarend</h3>
+        <div id = "data"></div>
+        <div>Válassza ki a feldolgozandó JSON fájlt!</div>
+        <input type="file" accept=".json" id="file-in" >
+
+    </body>
+    <script>
+
+        const dataDiv = document.getElementById("data");
+        const fileInput = document.getElementById("file-in");
+
+        //Böngésző blokkolja same origin policy miatt a lokális fájlbeolvasást, input gomb
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    const json = e.target.result;
+                    writeData(json);
+                };
+                reader.readAsText(file);
+            }
+        }
+
+        function writeData(json) {
+            try {
+                dataDiv.innerHTML = "";
+                const obj = JSON.parse(json);
+                const array = obj.YD11NL_orarend.ora;
+                for (let i = 0; i < array.length; i++) {
+                    let child = document.createElement("div")
+                    child.innerHTML = "<span style='color:blue'>Tárgy:</span><span> " + array[i].targy + "</span>";
+                    dataDiv.appendChild(child);
+                    child = document.createElement("div")
+                    child.innerText = "Időpont: " + array[i].idopont.nap + " " + array[i].idopont.tol + "-" + array[i].idopont.ig;
+                    dataDiv.appendChild(child);
+                    child = document.createElement("div")
+                    child.innerText = "Helyszín: " + array[i].helyszin;
+                    dataDiv.appendChild(child);
+                    child = document.createElement("div")
+                    child.innerText = "Oktató: " + array[i].oktato;
+                    dataDiv.appendChild(child);
+                    child = document.createElement("div")
+                    child.innerHTML = "<p style='margin-top:0px;'>Szak: " + array[i].szak + "</p>";
+                    dataDiv.appendChild(child);
+                }
+            } catch (error) {
+                console.log(error)
+                let child = document.createElement("div");
+                child.innerHTML = "<p style='color:red'>Hibás input JSON formátum!</p>";
+                dataDiv.appendChild(child);
+            }
+        }
+
+        let json = '{"GG_orarend":{"ora":[{"targy":"Oracle","idopont":{"nap":"Hétfő","tol":"8","ig":"10"},"helyszin":"Info/103","oktato":"Kovács László","szak":"Mérnök informatika","_id":"01","_tipus":"eloadas"},{"targy":"Oracle","idopont":{"nap":"Kedd","tol":"14","ig":"15"},"helyszin":"Info/202","oktato":"Szűcs Miklós","szak":"Mérnök informatika","_id":"02","_tipus":"gyakorlat"},{"targy":"Webtech1","idopont":{"nap":"Hétfő","tol":"10","ig":"12"},"helyszin":"Eloado 1","oktato":"Agárdi Anita","szak":"Mérnök informatika","_id":"03","_tipus":"eloadas"},{"targy":"Webtech1","idopont":{"nap":"Hétfő","tol":"14","ig":"16"},"helyszin":"Info/101","oktato":"Agárdi Anita","szak":"Mérnök informatika","_id":"04","_tipus":"gyakorlat"},{"targy":"Korszerű tech","idopont":{"nap":"Hétfő","tol":"12","ig":"14"},"helyszin":"Info/103","oktato":"Árvai László","szak":"Mérnök informatika","_id":"05","_tipus":"eloadas"},{"targy":"Korszerű tech","idopont":{"nap":"Szerda","tol":"16","ig":"18"},"helyszin":"Info/15","oktato":"Soós Róbert","szak":"Mérnök informatika","_id":"06","_tipus":"gyakorlat"},{"targy":"WebalkC#","idopont":{"nap":"Kedd","tol":"14","ig":"16"},"helyszin":"Info/101","oktato":"Árvai László","szak":"Mérnök informatika","_id":"07","_tipus":"eloadas"},{"targy":"WebalkC#","idopont":{"nap":"Szerda","tol":"16","ig":"18"},"helyszin":"Info/101","oktato":"Árvai László","szak":"Mérnök informatika","_id":"08","_tipus":"gyakorlat"}],"_xmlns:xs":"http://www.w3.org/2001/XMLSchema-instance","_xs:noNamespaceSchemaLocation":"feu2e5_orarend.xsd"}}';
+        writeData(json);
+
+        fileInput.addEventListener("change", handleFileSelect);
+        
+    </script>
+</html>

@@ -1,0 +1,96 @@
+{
+	"GG_orarend": {
+		"ora": [
+			{
+				"targy": "Oracle",
+				"idopont": {
+					"nap": "Hétfő",
+					"tol": "8",
+					"ig": "10"
+				},
+				"helyszin": "Info/103",
+				"oktato": "Kovács László",
+				"szak": "Mérnök informatika",
+			},
+			{
+				"targy": "Oracle",
+				"idopont": {
+					"nap": "Kedd",
+					"tol": "14",
+					"ig": "15"
+				},
+				"helyszin": "Info/202",
+				"oktato": "Szűcs Miklós",
+				"szak": "Mérnök informatika",
+			},
+			{
+				"targy": "Webtech1",
+				"idopont": {
+					"nap": "Hétfő",
+					"tol": "10",
+					"ig": "12"
+				},
+				"helyszin": "Eloado 1",
+				"oktato": "Agárdi Anita",
+				"szak": "Mérnök informatika",
+			},
+			{
+				"targy": "Webtech1",
+				"idopont": {
+					"nap": "Hétfő",
+					"tol": "14",
+					"ig": "16"
+				},
+				"helyszin": "Info/101",
+				"oktato": "Agárdi Anita",
+				"szak": "Mérnök informatika",
+			},
+			{
+				"targy": "Korszerű tech",
+				"idopont": {
+					"nap": "Hétfő",
+					"tol": "12",
+					"ig": "14"
+				},
+				"helyszin": "Info/103",
+				"oktato": "Árvai László",
+				"szak": "Mérnök informatika",
+			},
+			{
+				"targy": "Korszerű tech",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "16",
+					"ig": "18"
+				},
+				"helyszin": "Info/15",
+				"oktato": "Soós Róbert",
+				"szak": "Mérnök informatika",
+			},
+			{
+				"targy": "WebalkC#",
+				"idopont": {
+					"nap": "Kedd",
+					"tol": "14",
+					"ig": "16"
+				},
+				"helyszin": "Info/101",
+				"oktato": "Árvai László",
+				"szak": "Mérnök informatika",
+			},
+			{
+				"targy": "WebalkC#",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "16",
+					"ig": "18"
+				},
+				"helyszin": "Info/101",
+				"oktato": "Árvai László",
+				"szak": "Mérnök informatika",
+			}
+		],
+		"_xmlns:xs": "http://www.w3.org/2001/XMLSchema-instance",
+		"_xs:noNamespaceSchemaLocation": "feu2e5_orarend.xsd"
+	}
+}
