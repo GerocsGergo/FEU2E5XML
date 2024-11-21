@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+        <!--Elemek ref-hez-->
+    <xs:element name="név" type="xs:string" />
+    <xs:element name="elérhetőség" type="elérhetőségTípus" />
+
+    <!-- Saját egyszerű típusok meghatározása, megszorítás -->
+    <xs:simpleType name="nemTípus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="lány" />
+            <xs:enumeration value="fiú" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="kedvezményTípus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="normál" />
+            <xs:enumeration value="kedvezményes" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="aktívTípus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="igen" />
+            <xs:enumeration value="nem" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="óraIdőTípus">
+        <xs:restriction base="xs:nonNegativeInteger">
+            <xs:minExclusive value="8" />
+            <xs:maxExclusive value="15" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="emailTípus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[a-z]([a-z0-9_.-]*)@[a-z]([a-z0-9_-]*).[a-z]{2,4}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="telefonTípus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([+]?)\d{11}" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="értékelésTípus">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="5"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+    <!--Komplex típusokhoz saját típus meghatározása, sorrendiség, számosság etc. -->
+    <xs:complexType name="elérhetőségTípus">
+        <xs:sequence>
+            <xs:element name="telefonszám" type="telefonTípus" />
+            <xs:element name="email" type="emailTípus" minOccurs="1" maxOccurs="5" />    
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="időpontTípus">
+        <xs:sequence>
+            <xs:element name="dátum" type="xs:date" />
+            <xs:element name="kezdet" type="óraIdőTípus" />
+            <xs:element name="vég" type="óraIdőTípus" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="diákTípus">
+        <xs:sequence>
+            <xs:element ref="név" />
+            <xs:element name="IQ" type="xs:integer" />
+            <xs:element name="születési_dátum" type="xs:date" />
+            <xs:element name="nem" type="nemTípus" />
+        </xs:sequence>
+        <xs:attribute name="Dkód" type="xs:integer" use="required" />
+        <xs:attribute name="szülő" type="xs:integer" use="required" />
+        <xs:attribute name="tagság" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="tagságTípus">
+        <xs:all>
+            <xs:element name="kezdőnap" type="xs:date" />
+            <xs:element name="kedvezmény" type="kedvezményTípus" />
+            <xs:element name="aktív" type="aktívTípus" />
+        </xs:all>
+        <xs:attribute name="Tagkód" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="szülőTípus">
+        <xs:sequence>
+            <xs:element ref="név" />        
+            <xs:element name="születési_év" type="xs:gYear" />
+            <xs:element ref="elérhetőség" />
+        </xs:sequence>
+        <xs:attribute name="Szkód" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="óraTípus">
+        <xs:sequence>
+            <xs:element name="téma" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="helyszín" type="xs:string" />
+            <xs:element name="időpont" type="időpontTípus" />
+        </xs:sequence>
+        <xs:attribute name="Ókód" type="xs:integer" use="required" />
+        <xs:attribute name="tanár" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="részvételTípus">
+        <xs:sequence>
+            <xs:element name="értékelés" type="értékelésTípus"  />
+            <xs:element name="jutalom" type="xs:string" minOccurs="0" maxOccurs="1" />
+        </xs:sequence>
+        <xs:attribute name="diák" type="xs:integer" use="required" />
+        <xs:attribute name="óra" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:complexType name="tanárTípus">
+        <xs:sequence>
+            <xs:element ref="név" />
+            <xs:element name="szakterület" type="xs:string" minOccurs="0" maxOccurs="1" />        
+            <xs:element name="órabér" type="xs:positiveInteger" />
+            <xs:element ref="elérhetőség"/>
+        </xs:sequence>
+        <xs:attribute name="Tankód" type="xs:integer" use="required" />
+    </xs:complexType>
+
+    <!-- Gyökérelemtől az elemek felhasználása -->
+    <xs:element name="iskola">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="diák" type="diákTípus" minOccurs="0" maxOccurs="100" />
+                <xs:element name="tagság" type="tagságTípus" minOccurs="0" maxOccurs="100" />
+                <xs:element name="szülő" type="szülőTípus" minOccurs="0" maxOccurs="100" />
+                <xs:element name="óra" type="óraTípus" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element name="részvétel" type="részvételTípus" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element name="tanár" type="tanárTípus" minOccurs="1" maxOccurs="100" />
+            </xs:sequence>
+        </xs:complexType>
+
+        <!-- Elsődleges kulcsok -->
+        <xs:key name="diák_kulcs">
+            <xs:selector xpath="diák" />
+            <xs:field xpath="@Dkód" />
+        </xs:key>
+        <xs:key name="tagság_kulcs">
+            <xs:selector xpath="tagság" />
+            <xs:field xpath="@Tagkód" />
+        </xs:key>
+        <xs:key name="szülő_kulcs">
+            <xs:selector xpath="szülő" />
+            <xs:field xpath="@Szkód" />
+        </xs:key>
+        <xs:key name="óra_kulcs">
+            <xs:selector xpath="óra" />
+            <xs:field xpath="@Ókód" />
+        </xs:key>
+        <xs:key name="tanár_kulcs">
+            <xs:selector xpath="tanár" />
+            <xs:field xpath="@Tankód" />
+        </xs:key>
+
+        <!-- Idegen kulcsok -->
+        <xs:keyref name="diák_tagság_kulcs" refer="tagság_kulcs">
+            <xs:selector xpath="diák" />
+            <xs:field xpath="@tagság" />
+        </xs:keyref>
+        <xs:keyref name="diák_szülő_kulcs" refer="szülő_kulcs">
+            <xs:selector xpath="diák" />
+            <xs:field xpath="@szülő" />
+        </xs:keyref>
+        <xs:keyref name="óra_tanár_kulcs" refer="tanár_kulcs">
+            <xs:selector xpath="óra" />
+            <xs:field xpath="@tanár" />
+        </xs:keyref>
+        <xs:keyref name="részvétel_diák_kulcs" refer="diák_kulcs">
+            <xs:selector xpath="részvétel" />
+            <xs:field xpath="@diák" />
+        </xs:keyref>
+        <xs:keyref name="részvétel_óra_kulcs" refer="óra_kulcs">
+            <xs:selector xpath="részvétel" />
+            <xs:field xpath="@óra" />
+        </xs:keyref>
+
+        <!-- Az 1:1 kapcsolat megvalósítása -->
+        <xs:unique name="diák_tagság_1_1">
+            <xs:selector xpath="diák" />
+            <xs:field xpath="@tagság" />
+        </xs:unique>
+
+    </xs:element>
+
+</xs:schema>
