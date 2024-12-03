@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE kurzusfelvetel SYSTEM "kurzusfelvetel.dtd">-->
+<kurzusfelvetel tanev="2024_2025_I. " egyetem="ME">
+    <hallgato id="FEU2E5.ME">
+        <hnev>Gerőcs Gergő</hnev>
+        <szulev>2002-12-17</szulev>
+        <szak evf="5">Mérnökinformatikus</szak>
+    </hallgato>
+    <kurzusok>
+        <kurzus id="GEIAL332-B">
+            <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf. 103.</hely>
+            <idopont>Kedd 12:00-13:30</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+        <kurzus id="GEIAL331-B">
+            <kurzusnev>Adatbázisrendszerek I.</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf. 103.</hely>
+            <idopont>Kedd 14:00-15:30</idopont>
+            <oktato>Dr. Kovács László</oktato>
+        </kurzus>
+        <kurzus id="GEIAL330-B">
+            <kurzusnev>Webtechnológiák</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf. 101.</hely>
+            <idopont>Hétfő 12:00-13:30</idopont>
+            <oktato>Dr. Agárdi Anita</oktato>
+        </kurzus>
+    </kurzusok>
+</kurzusfelvetel>
