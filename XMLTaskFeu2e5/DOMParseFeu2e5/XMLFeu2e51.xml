@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<iskola>
+    <!--Diákok-->
+    <diák Dkód="10" szülő="100" tagság="1000">
+        <név>Kiss Attila</név>
+        <IQ>90</IQ>
+        <születési_dátum>2016-12-17</születési_dátum>
+        <nem>fiú</nem>
+    </diák>
+    <diák Dkód="11" szülő="110" tagság="1001">
+        <név>Nagy Mária</név>
+        <IQ>65</IQ>
+        <születési_dátum>2016-10-15</születési_dátum>
+        <nem>lány</nem>
+    </diák>
+    <diák Dkód="12" szülő="120" tagság="1002">
+        <név>Szép Tamás</név>
+        <IQ>110</IQ>
+        <születési_dátum>2016-06-06</születési_dátum>
+        <nem>fiú</nem>
+    </diák>
+    <diák Dkód="13" szülő="120" tagság="1003">
+        <név>Szép Anita</név>
+        <IQ>115</IQ>
+        <születési_dátum>2016-01-05</születési_dátum>
+        <nem>lány</nem>
+    </diák>
+    <!--tagság adatok-->
+    <tagság Tagkód="1000">
+        <kezdőnap>normál</kezdőnap>
+        <kedvezmény>igen</kedvezmény>
+        <aktív>2016-09-01</aktív>
+    </tagság>
+    <tagság Tagkód="1001">
+        <kezdőnap>kedvezményes</kezdőnap>
+        <kedvezmény>igen</kedvezmény>
+        <aktív>2015-09-01</aktív>
+    </tagság>
+    <tagság Tagkód="1002">
+        <kezdőnap>normál</kezdőnap>
+        <kedvezmény>igen</kedvezmény>
+        <aktív>2013-09-01</aktív>
+    </tagság>
+    <tagság Tagkód="1003">
+        <kezdőnap>kedvezményes</kezdőnap>
+        <kedvezmény>nem</kedvezmény>
+        <aktív>2013-09-01</aktív>
+    </tagság>
+    <!--szülők-->
+    <szülő Szkód="100">
+        <név>Kiss Béla</név>
+        <születési_év>1985</születési_év>
+        <elérhetőség>
+            <email>belakiss@gmail.com</email>
+            <email>kissbela@citromail.hu</email>
+            <telefon>+36506060768</telefon>
+        </elérhetőség>
+    </szülő>
+    <szülő Szkód="110">
+        <név>Nagy Adrienn</név>
+        <születési_év>1991</születési_év>
+        <elérhetőség>
+            <email>n.adrienn@gmail.com</email>
+            <telefon>+36701234987</telefon>
+        </elérhetőség>
+    </szülő>
+    <szülő Szkód="120">
+        <név>Szép János</név>
+        <születési_év>1990</születési_év>
+        <elérhetőség>
+            <email>szepjancsi@szepmail.hu</email>
+            <email>jancsi.szep@gmail.com</email>
+            <email>jancsi.szep@freemail.com</email>
+            <telefon>+36208877665</telefon>
+        </elérhetőség>
+    </szülő>
+    <!--Órák-->
+    <óra tanár="1100" Ókód="1200">
+        <téma>Matematika alapjai</téma>
+        <helyszín>tanterem 101.</helyszín>
+        <időpont>
+            <dátum>2024-10-30</dátum>
+            <kezdet>13</kezdet>
+            <vég>14</vég>
+        </időpont>
+    </óra>
+    <óra tanár="1100" Ókód="1201">
+        <téma>osztás</téma>
+        <téma>szorzás</téma>
+        <helyszín>tanterem 2.</helyszín>
+        <időpont>
+            <dátum>2024-10-15</dátum>
+            <kezdet>9</kezdet>
+            <vég>10</vég>
+        </időpont>
+    </óra>
+    <óra tanár="1101" Ókód="1202">
+        <téma>Kidobós</téma>
+        <téma>cooper teszt</téma>
+        <helyszín>tornaterem</helyszín>
+        <időpont>
+            <dátum>2024-09-02</dátum>
+            <kezdet>12</kezdet>
+            <vég>13</vég>
+        </időpont>
+    </óra>
+    <óra tanár="1102" Ókód="1203">
+        <téma>fogócska</téma>
+        <helyszín>udvar</helyszín>
+        <időpont>
+            <dátum>2024-11-25</dátum>
+            <kezdet>11</kezdet>
+            <vég>12</vég>
+        </időpont>
+    </óra>
+    <!--részvételi adatok-->
+    <részvétel diák="10" óra="1200">
+        <értékelés>3</értékelés>
+    </részvétel>
+    <részvétel diák="10" óra="1201">
+        <értékelés>4</értékelés>
+        <jutalom>pirospont</jutalom>
+    </részvétel>
+    <részvétel diák="11" óra="1201">
+        <értékelés>5</értékelés>
+        <jutalom>matrica</jutalom>
+    </részvétel>
+    <részvétel diák="12" óra="1200">
+        <értékelés>1</értékelés>
+        <jutalom>feketepont</jutalom>
+    </részvétel>
+    <részvétel diák="12" óra="1202">
+        <értékelés>3</értékelés>
+    </részvétel>
+    <részvétel diák="13" óra="1203">
+        <értékelés>5</értékelés>
+        <jutalom>pirospont</jutalom>
+    </részvétel>
+    <!--tanárok-->
+    <tanár Tankód="1100">
+        <név>Takács Péter</név>
+        <elérhetőség>
+            <email>t.p@gmail.com</email>
+            <telefon>+36702525625</telefon>
+        </elérhetőség>
+        <szakterület>Matematika</szakterület>
+        <órabér>5000</órabér>
+    </tanár>
+    <tanár Tankód="1101">
+        <név>Kovács Zoltán</név>
+        <elérhetőség>
+            <email>kovizol@gmail.com</email>
+            <email>kovacs.z@freemail.hu</email>
+            <telefon>+36301233456</telefon>
+        </elérhetőség>
+        <szakterület>Testnevelés</szakterület>
+        <órabér>2500</órabér>
+    </tanár>
+    <tanár Tankód="1102">
+        <név>Lédig Anna</név>
+        <elérhetőség>
+            <email>ledig@gmail.com</email>
+            <telefon>+36708996574</telefon>
+        </elérhetőség>
+        <szakterület>Viselkedés Pszichológia</szakterület>
+        <órabér>9500</órabér>
+    </tanár>
+</iskola>
