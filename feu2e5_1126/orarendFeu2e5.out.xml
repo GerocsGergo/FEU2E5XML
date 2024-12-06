@@ -1,0 +1,34 @@
+<html>
+    <body>
+        <h2>&Oacute;rarend Gerőcs Gergő 2024/25 1. F&eacute;l&eacute;v</h2>
+        <table border="4">
+            <tr bgcolor="#90EE90">
+                <th>ID</th><th>Tipus</th><th>Targy</th><th colspan="2">Idopont</th><th>Helyszin</th><th>Oktato</th><th>Szak</th>
+            </tr>
+            <tr>
+                <td>01</td><td>eloadas</td><td>Oracle</td><td>H&eacute;tfő</td><td>8h - 10h</td><td>Info/103</td><td>Kov&aacute;cs L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;k informatika</td>
+            </tr>
+            <tr>
+                <td>02</td><td>gyakorlat</td><td>Oracle</td><td>Kedd</td><td>14h - 15h</td><td>Info/202</td><td>Szűcs Mikl&oacute;s</td><td>M&eacute;rn&ouml;k informatika</td>
+            </tr>
+            <tr>
+                <td>03</td><td>eloadas</td><td>Webtech1</td><td>H&eacute;tfő</td><td>10h - 12h</td><td>Eloado 1</td><td>Ag&aacute;rdi Anita</td><td>M&eacute;rn&ouml;k informatika</td>
+            </tr>
+            <tr>
+                <td>04</td><td>gyakorlat</td><td>Webtech1</td><td>H&eacute;tfő</td><td>14h - 16h</td><td>Info/101</td><td>Ag&aacute;rdi Anita</td><td>M&eacute;rn&ouml;k informatika</td>
+            </tr>
+            <tr>
+                <td>05</td><td>eloadas</td><td>Korszerű tech</td><td>H&eacute;tfő</td><td>12h - 14h</td><td>Info/103</td><td>&Aacute;rvai L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;k informatika</td>
+            </tr>
+            <tr>
+                <td>06</td><td>gyakorlat</td><td>Korszerű tech</td><td>Szerda</td><td>16h - 18h</td><td>Info/15</td><td>So&oacute;s R&oacute;bert</td><td>M&eacute;rn&ouml;k informatika</td>
+            </tr>
+            <tr>
+                <td>07</td><td>eloadas</td><td>WebalkC#</td><td>Kedd</td><td>14h - 16h</td><td>Info/101</td><td>&Aacute;rvai L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;k informatika</td>
+            </tr>
+            <tr>
+                <td>08</td><td>gyakorlat</td><td>WebalkC#</td><td>Szerda</td><td>16h - 18h</td><td>Info/101</td><td>&Aacute;rvai L&aacute;szl&oacute;</td><td>M&eacute;rn&ouml;k informatika</td>
+            </tr>
+        </table>
+    </body>
+</html>
